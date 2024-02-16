@@ -1,3 +1,3 @@
-import '/material_web/button/filled-button.js';
-import '/material_web/button/outlined-button.js';
-import '/node_modules/@material_web/checkbox/checkbox.js';
+import '@material/web/button/filled-button.js';
+import '@material/web/button/outlined-button.js';
+import '@material/web/checkbox/checkbox.js';
