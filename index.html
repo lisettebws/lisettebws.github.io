@@ -21,22 +21,22 @@
 <fieldset>
   <legend>Select Module(s), leave blank for all</legend>
 
-<div><input type="checkbox" id="AUTHORITIES" name="module" value="AUTHORITIES" /><label for="AUTHORITIES">Authorities</label></div>
-<div><input type="checkbox" id="MEMBERS" name="module" value="MEMBERS" /><label for="MEMBERS">Members</label></div>
-<div><input type="checkbox" id="ACQUISITIONS" name="module" value="ACQUISITIONS" /><label for="ACQUISITIONS">Acquisitions</label></div>
-<div><input type="checkbox" id="SERIAL" name="module" value="SERIAL" /><label for="SERIAL">Serial</label></div>
-<div><input type="checkbox" id="HOLDS" name="module" value="HOLDS" /><label for="HOLDS">Holds</label></div>
-<div><input type="checkbox" id="ILL" name="module" value="ILL" /><label for="ILL">Ill</label></div>
-<div><input type="checkbox" id="CIRCULATION" name="module" value="CIRCULATION" /><label for="CIRCULATION">Circulation</label></div>
-<div><input type="checkbox" id="CLAIMS" name="module" value="CLAIMS" /><label for="CLAIMS">Claims</label></div>
-<div><input type="checkbox" id="FINES" name="module" value="FINES" /><label for="FINES">Fines</label></div>
-<div><input type="checkbox" id="SYSTEMPREFERENCE" name="module" value="SYSTEMPREFERENCE" /><label for="SYSTEMPREFERENCE">Systempreference</label></div>
-<div><input type="checkbox" id="CRONJOBS" name="module" value="CRONJOBS" /><label for="CRONJOBS">Cronjobs</label></div>
-<div><input type="checkbox" id="REPORTS" name="module" value="REPORTS" /><label for="REPORTS">Reports</label></div>
-<div><input type="checkbox" id="SEARCHENGINE" name="module" value="SEARCHENGINE" /><label for="SEARCHENGINE">Searchengine</label></div>
-<div><input type="checkbox" id="NOTICES" name="module" value="NOTICES" /><label for="NOTICES">Notices</label></div>
-<div><input type="checkbox" id="NEWS" name="module" value="NEWS" /><label for="NEWS">News</label></div>
-<div><input type="checkbox" id="RECALLS" name="module" value="RECALLS" /><label for="RECALLS">Recalls</label></div>
+<div><label for="AUTHORITIES">Authorities</label><input type="checkbox" id="AUTHORITIES" name="module" value="Authorities" /></div>
+<div><label for="MEMBERS">Members</label><input type="checkbox" id="MEMBERS" name="module" value="Members" /></div>
+<div><label for="ACQUISITIONS">Acquisitions</label><input type="checkbox" id="ACQUISITIONS" name="module" value="Acquisitions" /></div>
+<div><label for="SERIAL">Serial</label><input type="checkbox" id="SERIAL" name="module" value="Serial" /></div>
+<div><label for="HOLDS">Holds</label><input type="checkbox" id="HOLDS" name="module" value="Holds" /></div>
+<div><label for="ILL">Ill</label><input type="checkbox" id="ILL" name="module" value="Ill" /></div>
+<div><label for="CIRCULATION">Circulation</label><input type="checkbox" id="CIRCULATION" name="module" value="Circulation" /></div>
+<div><label for="CLAIMS">Claims</label><input type="checkbox" id="CLAIMS" name="module" value="Claims" /></div>
+<div><label for="FINES">Fines</label><input type="checkbox" id="FINES" name="module" value="Fines" /></div>
+<div><label for="SYSTEMPREFERENCE">Systempreference</label><input type="checkbox" id="SYSTEMPREFERENCE" name="module" value="Systempreference" /></div>
+<div><label for="CRONJOBS">Cronjobs</label><input type="checkbox" id="CRONJOBS" name="module" value="Cronjobs" /></div>
+<div><label for="REPORTS">Reports</label><input type="checkbox" id="REPORTS" name="module" value="Reports" /></div>
+<div><label for="SEARCHENGINE">Searchengine</label><input type="checkbox" id="SEARCHENGINE" name="module" value="Searchengine" /></div>
+<div><label for="NOTICES">Notices</label><input type="checkbox" id="NOTICES" name="module" value="Notices" /></div>
+<div><label for="NEWS">News</label><input type="checkbox" id="NEWS" name="module" value="News" /></div>
+<div><label for="RECALLS">Recalls</label><input type="checkbox" id="RECALLS" name="module" value="Recalls" /></div>
 </fieldset>
         </li>
 <fieldset>
@@ -83,7 +83,7 @@
 <div><input type="checkbox" id="ACQUISITION_CLAIM" name="action" value="ACQUISITION_CLAIM" /><label for="ACQUISITION_CLAIM"></label></div>
 <div><input type="checkbox" id="ACQUISITION_ORDER" name="action" value="ACQUISITION_ORDER" /><label for="ACQUISITION_ORDER"></label></div>
 <div><input type="checkbox" id="OVERDUE" name="action" value="OVERDUE" /><label for="OVERDUE"></label></div>
-<div><input type="checkbox" id="EXPIRE" name="action" value="EXPIRE" /><label for="EXPIRE"></label></div>
+<div><label for="EXPIRE"></label><input type="checkbox" id="EXPIRE" name="action" value="EXPIRE" /></div>
 </fieldset> </li>
         <li>
           <label for ="object">Object</label>
@@ -92,18 +92,21 @@
           <fieldset>
             <legend>Object type (optional)</legend>
             <div>
-              <input type="radio" id="biblio" name="biblio" />
               <label for ="object_type">Biblio</label>
+              <input type="radio" id="biblio" name="biblio" />
+
           </div>
                         <div>
-              <input type="radio" id="item" name="item" />
               <label for ="object_type">Item</label>
+                          <input type="radio" id="item" name="item" />
+
           </div>
           </fieldset>
         </li>
         <li>
-          <input type="date" id="from" name="from_date" />
           <label for="from">From:</label>
+          <input type="date" id="from" name="from_date" />
+
             
         </li>
       </ul>
