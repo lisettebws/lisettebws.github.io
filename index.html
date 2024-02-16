@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Koha Log URL Builder</title>
+  </head>
+  <body>
+    <form action="/url=form_page" method="post">
+      <ul>
+        <li>
+          <label for ="base_url"></label>
+          <input type="text" id="base_url" name="partner_url" />
+        </li>
+        <li>
+          <label for ="user">Librarian</label>
+          <input type="number" id="user" name="librarian" />
+        </li>
+        <li>
+<fieldset>
+  <legend>Select Module(s), leave blank for all</legend>
+
+<div><input type="checkbox" id="AUTHORITIES" name="module" value="AUTHORITIES" /><label for="AUTHORITIES">Authorities</label></div>
+<div><input type="checkbox" id="MEMBERS" name="module" value="MEMBERS" /><label for="MEMBERS">Members</label></div>
+<div><input type="checkbox" id="ACQUISITIONS" name="module" value="ACQUISITIONS" /><label for="ACQUISITIONS">Acquisitions</label></div>
+<div><input type="checkbox" id="SERIAL" name="module" value="SERIAL" /><label for="SERIAL">Serial</label></div>
+<div><input type="checkbox" id="HOLDS" name="module" value="HOLDS" /><label for="HOLDS">Holds</label></div>
+<div><input type="checkbox" id="ILL" name="module" value="ILL" /><label for="ILL">Ill</label></div>
+<div><input type="checkbox" id="CIRCULATION" name="module" value="CIRCULATION" /><label for="CIRCULATION">Circulation</label></div>
+<div><input type="checkbox" id="CLAIMS" name="module" value="CLAIMS" /><label for="CLAIMS">Claims</label></div>
+<div><input type="checkbox" id="FINES" name="module" value="FINES" /><label for="FINES">Fines</label></div>
+<div><input type="checkbox" id="SYSTEMPREFERENCE" name="module" value="SYSTEMPREFERENCE" /><label for="SYSTEMPREFERENCE">Systempreference</label></div>
+<div><input type="checkbox" id="CRONJOBS" name="module" value="CRONJOBS" /><label for="CRONJOBS">Cronjobs</label></div>
+<div><input type="checkbox" id="REPORTS" name="module" value="REPORTS" /><label for="REPORTS">Reports</label></div>
+<div><input type="checkbox" id="SEARCHENGINE" name="module" value="SEARCHENGINE" /><label for="SEARCHENGINE">Searchengine</label></div>
+<div><input type="checkbox" id="NOTICES" name="module" value="NOTICES" /><label for="NOTICES">Notices</label></div>
+<div><input type="checkbox" id="NEWS" name="module" value="NEWS" /><label for="NEWS">News</label></div>
+<div><input type="checkbox" id="RECALLS" name="module" value="RECALLS" /><label for="RECALLS">Recalls</label></div>
+</fieldset>
+        </li>
+<fieldset>
+  <legend>Select Action(s), leave blank for all</legend>
+  <div><input type="checkbox" id="ADD" name="action" value="ADD" /><label for="ADD"></label></div>
+<div><input type="checkbox" id="DELETE" name="action" value="DELETE" /><label for="DELETE"></label></div>
+<div><input type="checkbox" id="MODIFY" name="action" value="MODIFY" /><label for="MODIFY"></label></div>
+<div><input type="checkbox" id="ISSUE" name="action" value="ISSUE" /><label for="ISSUE"></label></div>
+<div><input type="checkbox" id="RETURN" name="action" value="RETURN" /><label for="RETURN"></label></div>
+<div><input type="checkbox" id="RENEW" name="action" value="RENEW" /><label for="RENEW"></label></div>
+<div><input type="checkbox" id="CREATE" name="action" value="CREATE" /><label for="CREATE"></label></div>
+<div><input type="checkbox" id="CANCEL" name="action" value="CANCEL" /><label for="CANCEL"></label></div>
+<div><input type="checkbox" id="FILL" name="action" value="FILL" /><label for="FILL"></label></div>
+<div><input type="checkbox" id="SUSPEND" name="action" value="SUSPEND" /><label for="SUSPEND"></label></div>
+<div><input type="checkbox" id="RESUME" name="action" value="RESUME" /><label for="RESUME"></label></div>
+<div><input type="checkbox" id="ADDCIRCMESSAGE" name="action" value="ADDCIRCMESSAGE" /><label for="ADDCIRCMESSAGE"></label></div>
+<div><input type="checkbox" id="MODCIRCMESSAGE" name="action" value="MODCIRCMESSAGE" /><label for="MODCIRCMESSAGE"></label></div>
+<div><input type="checkbox" id="DELCIRCMESSAGE" name="action" value="DELCIRCMESSAGE" /><label for="DELCIRCMESSAGE"></label></div>
+<div><input type="checkbox" id="STATUS_CHANGE" name="action" value="STATUS_CHANGE" /><label for="STATUS_CHANGE"></label></div>
+<div><input type="checkbox" id="PATRON_NOTICE" name="action" value="PATRON_NOTICE" /><label for="PATRON_NOTICE"></label></div>
+<div><input type="checkbox" id="CHANGE_PASS" name="action" value="CHANGE_PASS" /><label for="CHANGE_PASS"></label></div>
+<div><input type="checkbox" id="Run" name="action" value="Run" /><label for="Run"></label></div>
+<div><input type="checkbox" id="End" name="action" value="End" /><label for="End"></label></div>
+<div><input type="checkbox" id="EDIT_MAPPINGS" name="action" value="EDIT_MAPPINGS" /><label for="EDIT_MAPPINGS"></label></div>
+<div><input type="checkbox" id="RESET_MAPPINGS" name="action" value="RESET_MAPPINGS" /><label for="RESET_MAPPINGS"></label></div>
+<div><input type="checkbox" id="ADD_BASKET" name="action" value="ADD_BASKET" /><label for="ADD_BASKET"></label></div>
+<div><input type="checkbox" id="MODIFY_BASKET" name="action" value="MODIFY_BASKET" /><label for="MODIFY_BASKET"></label></div>
+<div><input type="checkbox" id="MODIFY_BASKET_HEADER" name="action" value="MODIFY_BASKET_HEADER" /><label for="MODIFY_BASKET_HEADER"></label></div>
+<div><input type="checkbox" id="MODIFY_BASKET_USERS" name="action" value="MODIFY_BASKET_USERS" /><label for="MODIFY_BASKET_USERS"></label></div>
+<div><input type="checkbox" id="CLOSE_BASKET" name="action" value="CLOSE_BASKET" /><label for="CLOSE_BASKET"></label></div>
+<div><input type="checkbox" id="APPROVE_BASKET" name="action" value="APPROVE_BASKET" /><label for="APPROVE_BASKET"></label></div>
+<div><input type="checkbox" id="REOPEN_BASKET" name="action" value="REOPEN_BASKET" /><label for="REOPEN_BASKET"></label></div>
+<div><input type="checkbox" id="CANCEL_ORDER" name="action" value="CANCEL_ORDER" /><label for="CANCEL_ORDER"></label></div>
+<div><input type="checkbox" id="CREATE_ORDER" name="action" value="CREATE_ORDER" /><label for="CREATE_ORDER"></label></div>
+<div><input type="checkbox" id="MODIFY_ORDER" name="action" value="MODIFY_ORDER" /><label for="MODIFY_ORDER"></label></div>
+<div><input type="checkbox" id="CREATE_INVOICE_ADJUSTMENT" name="action" value="CREATE_INVOICE_ADJUSTMENT" /><label for="CREATE_INVOICE_ADJUSTMENT"></label></div>
+<div><input type="checkbox" id="UPDATE_INVOICE_ADJUSTMENT" name="action" value="UPDATE_INVOICE_ADJUSTMENT" /><label for="UPDATE_INVOICE_ADJUSTMENT"></label></div>
+<div><input type="checkbox" id="DELETE_INVOICE_ADJUSTMENT" name="action" value="DELETE_INVOICE_ADJUSTMENT" /><label for="DELETE_INVOICE_ADJUSTMENT"></label></div>
+<div><input type="checkbox" id="RECEIVE_ORDER" name="action" value="RECEIVE_ORDER" /><label for="RECEIVE_ORDER"></label></div>
+<div><input type="checkbox" id="MODIFY_BUDGET" name="action" value="MODIFY_BUDGET" /><label for="MODIFY_BUDGET"></label></div>
+<div><input type="checkbox" id="MODIFY_FUND" name="action" value="MODIFY_FUND" /><label for="MODIFY_FUND"></label></div>
+<div><input type="checkbox" id="CREATE_FUND" name="action" value="CREATE_FUND" /><label for="CREATE_FUND"></label></div>
+<div><input type="checkbox" id="DELETE_FUND" name="action" value="DELETE_FUND" /><label for="DELETE_FUND"></label></div>
+<div><input type="checkbox" id="ACQUISITION_CLAIM" name="action" value="ACQUISITION_CLAIM" /><label for="ACQUISITION_CLAIM"></label></div>
+<div><input type="checkbox" id="ACQUISITION_ORDER" name="action" value="ACQUISITION_ORDER" /><label for="ACQUISITION_ORDER"></label></div>
+<div><input type="checkbox" id="OVERDUE" name="action" value="OVERDUE" /><label for="OVERDUE"></label></div>
+<div><input type="checkbox" id="EXPIRE" name="action" value="EXPIRE" /><label for="EXPIRE"></label></div>
+</fieldset> </li>
+        <li>
+          <label for ="object">Object</label>
+          <input type="number" id="object" name="object_id" />
+        </li><li>
+          <fieldset>
+            <legend>Object type (optional)</legend>
+            <div>
+              <input type="radio" id="biblio" name="biblio" />
+              <label for ="object_type">Biblio</label>
+          </div>
+                        <div>
+              <input type="radio" id="item" name="item" />
+              <label for ="object_type">Item</label>
+          </div>
+          </fieldset>
+        </li>
+        <li>
+          <input type="date" id="from" name="from_date" />
+          <label for="from">From:</label>
+            
+        </li>
+      </ul>
+    </form>
+  </body>
+</html>
