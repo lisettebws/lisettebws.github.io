@@ -10,7 +10,7 @@
     <form action="/url=form_page" method="post">
       <ul>
         <li>
-          <label for ="base_url"></label>
+          <label for ="base_url">Base URL</label>
           <input type="text" id="base_url" name="partner_url" />
         </li>
         <li>
@@ -41,48 +41,49 @@
         </li>
 <fieldset>
   <legend>Select Action(s), leave blank for all</legend>
-  <div><input type="checkbox" id="ADD" name="action" value="ADD" /><label for="ADD"></label></div>
-<div><input type="checkbox" id="DELETE" name="action" value="DELETE" /><label for="DELETE"></label></div>
-<div><input type="checkbox" id="MODIFY" name="action" value="MODIFY" /><label for="MODIFY"></label></div>
-<div><input type="checkbox" id="ISSUE" name="action" value="ISSUE" /><label for="ISSUE"></label></div>
-<div><input type="checkbox" id="RETURN" name="action" value="RETURN" /><label for="RETURN"></label></div>
-<div><input type="checkbox" id="RENEW" name="action" value="RENEW" /><label for="RENEW"></label></div>
-<div><input type="checkbox" id="CREATE" name="action" value="CREATE" /><label for="CREATE"></label></div>
-<div><input type="checkbox" id="CANCEL" name="action" value="CANCEL" /><label for="CANCEL"></label></div>
-<div><input type="checkbox" id="FILL" name="action" value="FILL" /><label for="FILL"></label></div>
-<div><input type="checkbox" id="SUSPEND" name="action" value="SUSPEND" /><label for="SUSPEND"></label></div>
-<div><input type="checkbox" id="RESUME" name="action" value="RESUME" /><label for="RESUME"></label></div>
-<div><input type="checkbox" id="ADDCIRCMESSAGE" name="action" value="ADDCIRCMESSAGE" /><label for="ADDCIRCMESSAGE"></label></div>
-<div><input type="checkbox" id="MODCIRCMESSAGE" name="action" value="MODCIRCMESSAGE" /><label for="MODCIRCMESSAGE"></label></div>
-<div><input type="checkbox" id="DELCIRCMESSAGE" name="action" value="DELCIRCMESSAGE" /><label for="DELCIRCMESSAGE"></label></div>
-<div><input type="checkbox" id="STATUS_CHANGE" name="action" value="STATUS_CHANGE" /><label for="STATUS_CHANGE"></label></div>
-<div><input type="checkbox" id="PATRON_NOTICE" name="action" value="PATRON_NOTICE" /><label for="PATRON_NOTICE"></label></div>
-<div><input type="checkbox" id="CHANGE_PASS" name="action" value="CHANGE_PASS" /><label for="CHANGE_PASS"></label></div>
-<div><input type="checkbox" id="Run" name="action" value="Run" /><label for="Run"></label></div>
-<div><input type="checkbox" id="End" name="action" value="End" /><label for="End"></label></div>
-<div><input type="checkbox" id="EDIT_MAPPINGS" name="action" value="EDIT_MAPPINGS" /><label for="EDIT_MAPPINGS"></label></div>
-<div><input type="checkbox" id="RESET_MAPPINGS" name="action" value="RESET_MAPPINGS" /><label for="RESET_MAPPINGS"></label></div>
-<div><input type="checkbox" id="ADD_BASKET" name="action" value="ADD_BASKET" /><label for="ADD_BASKET"></label></div>
-<div><input type="checkbox" id="MODIFY_BASKET" name="action" value="MODIFY_BASKET" /><label for="MODIFY_BASKET"></label></div>
-<div><input type="checkbox" id="MODIFY_BASKET_HEADER" name="action" value="MODIFY_BASKET_HEADER" /><label for="MODIFY_BASKET_HEADER"></label></div>
-<div><input type="checkbox" id="MODIFY_BASKET_USERS" name="action" value="MODIFY_BASKET_USERS" /><label for="MODIFY_BASKET_USERS"></label></div>
-<div><input type="checkbox" id="CLOSE_BASKET" name="action" value="CLOSE_BASKET" /><label for="CLOSE_BASKET"></label></div>
-<div><input type="checkbox" id="APPROVE_BASKET" name="action" value="APPROVE_BASKET" /><label for="APPROVE_BASKET"></label></div>
-<div><input type="checkbox" id="REOPEN_BASKET" name="action" value="REOPEN_BASKET" /><label for="REOPEN_BASKET"></label></div>
-<div><input type="checkbox" id="CANCEL_ORDER" name="action" value="CANCEL_ORDER" /><label for="CANCEL_ORDER"></label></div>
-<div><input type="checkbox" id="CREATE_ORDER" name="action" value="CREATE_ORDER" /><label for="CREATE_ORDER"></label></div>
-<div><input type="checkbox" id="MODIFY_ORDER" name="action" value="MODIFY_ORDER" /><label for="MODIFY_ORDER"></label></div>
-<div><input type="checkbox" id="CREATE_INVOICE_ADJUSTMENT" name="action" value="CREATE_INVOICE_ADJUSTMENT" /><label for="CREATE_INVOICE_ADJUSTMENT"></label></div>
-<div><input type="checkbox" id="UPDATE_INVOICE_ADJUSTMENT" name="action" value="UPDATE_INVOICE_ADJUSTMENT" /><label for="UPDATE_INVOICE_ADJUSTMENT"></label></div>
-<div><input type="checkbox" id="DELETE_INVOICE_ADJUSTMENT" name="action" value="DELETE_INVOICE_ADJUSTMENT" /><label for="DELETE_INVOICE_ADJUSTMENT"></label></div>
-<div><input type="checkbox" id="RECEIVE_ORDER" name="action" value="RECEIVE_ORDER" /><label for="RECEIVE_ORDER"></label></div>
-<div><input type="checkbox" id="MODIFY_BUDGET" name="action" value="MODIFY_BUDGET" /><label for="MODIFY_BUDGET"></label></div>
-<div><input type="checkbox" id="MODIFY_FUND" name="action" value="MODIFY_FUND" /><label for="MODIFY_FUND"></label></div>
-<div><input type="checkbox" id="CREATE_FUND" name="action" value="CREATE_FUND" /><label for="CREATE_FUND"></label></div>
-<div><input type="checkbox" id="DELETE_FUND" name="action" value="DELETE_FUND" /><label for="DELETE_FUND"></label></div>
-<div><input type="checkbox" id="ACQUISITION_CLAIM" name="action" value="ACQUISITION_CLAIM" /><label for="ACQUISITION_CLAIM"></label></div>
-<div><input type="checkbox" id="ACQUISITION_ORDER" name="action" value="ACQUISITION_ORDER" /><label for="ACQUISITION_ORDER"></label></div>
-<div><input type="checkbox" id="OVERDUE" name="action" value="OVERDUE" /><label for="OVERDUE"></label></div>
+<div><label for="ADD">Add</label><input type="checkbox" id="ADD" name="action" value="Add" /></div>
+<div><label for="DELETE">Delete</label><input type="checkbox" id="DELETE" name="action" value="Delete" /></div>
+<div><label for="MODIFY">Modify</label><input type="checkbox" id="MODIFY" name="action" value="Modify" /></div>
+<div><label for="ISSUE">Issue</label><input type="checkbox" id="ISSUE" name="action" value="Issue" /></div>
+<div><label for="RETURN">Return</label><input type="checkbox" id="RETURN" name="action" value="Return" /></div>
+<div><label for="RENEW">Renew</label><input type="checkbox" id="RENEW" name="action" value="Renew" /></div>
+<div><label for="CREATE">Create</label><input type="checkbox" id="CREATE" name="action" value="Create" /></div>
+<div><label for="CANCEL">Cancel</label><input type="checkbox" id="CANCEL" name="action" value="Cancel" /></div>
+<div><label for="FILL">Fill</label><input type="checkbox" id="FILL" name="action" value="Fill" /></div>
+<div><label for="SUSPEND">Suspend</label><input type="checkbox" id="SUSPEND" name="action" value="Suspend" /></div>
+<div><label for="RESUME">Resume</label><input type="checkbox" id="RESUME" name="action" value="Resume" /></div>
+<div><label for="ADDCIRCMESSAGE">Addcircmessage</label><input type="checkbox" id="ADDCIRCMESSAGE" name="action" value="Addcircmessage" /></div>
+<div><label for="MODCIRCMESSAGE">Modcircmessage</label><input type="checkbox" id="MODCIRCMESSAGE" name="action" value="Modcircmessage" /></div>
+<div><label for="DELCIRCMESSAGE">Delcircmessage</label><input type="checkbox" id="DELCIRCMESSAGE" name="action" value="Delcircmessage" /></div>
+<div><label for="STATUS_CHANGE">Status_Change</label><input type="checkbox" id="STATUS_CHANGE" name="action" value="Status_Change" /></div>
+<div><label for="PATRON_NOTICE">Patron_Notice</label><input type="checkbox" id="PATRON_NOTICE" name="action" value="Patron_Notice" /></div>
+<div><label for="CHANGE_PASS">Change_Pass</label><input type="checkbox" id="CHANGE_PASS" name="action" value="Change_Pass" /></div>
+<div><label for="Run">Run</label><input type="checkbox" id="Run" name="action" value="Run" /></div>
+<div><label for="End">End</label><input type="checkbox" id="End" name="action" value="End" /></div>
+<div><label for="EDIT_MAPPINGS">Edit_Mappings</label><input type="checkbox" id="EDIT_MAPPINGS" name="action" value="Edit_Mappings" /></div>
+<div><label for="RESET_MAPPINGS">Reset_Mappings</label><input type="checkbox" id="RESET_MAPPINGS" name="action" value="Reset_Mappings" /></div>
+<div><label for="ADD_BASKET">Add_Basket</label><input type="checkbox" id="ADD_BASKET" name="action" value="Add_Basket" /></div>
+<div><label for="MODIFY_BASKET">Modify_Basket</label><input type="checkbox" id="MODIFY_BASKET" name="action" value="Modify_Basket" /></div>
+<div><label for="MODIFY_BASKET_HEADER">Modify_Basket_Header</label><input type="checkbox" id="MODIFY_BASKET_HEADER" name="action" value="Modify_Basket_Header" /></div>
+<div><label for="MODIFY_BASKET_USERS">Modify_Basket_Users</label><input type="checkbox" id="MODIFY_BASKET_USERS" name="action" value="Modify_Basket_Users" /></div>
+<div><label for="CLOSE_BASKET">Close_Basket</label><input type="checkbox" id="CLOSE_BASKET" name="action" value="Close_Basket" /></div>
+<div><label for="APPROVE_BASKET">Approve_Basket</label><input type="checkbox" id="APPROVE_BASKET" name="action" value="Approve_Basket" /></div>
+<div><label for="REOPEN_BASKET">Reopen_Basket</label><input type="checkbox" id="REOPEN_BASKET" name="action" value="Reopen_Basket" /></div>
+<div><label for="CANCEL_ORDER">Cancel_Order</label><input type="checkbox" id="CANCEL_ORDER" name="action" value="Cancel_Order" /></div>
+<div><label for="CREATE_ORDER">Create_Order</label><input type="checkbox" id="CREATE_ORDER" name="action" value="Create_Order" /></div>
+<div><label for="MODIFY_ORDER">Modify_Order</label><input type="checkbox" id="MODIFY_ORDER" name="action" value="Modify_Order" /></div>
+<div><label for="CREATE_INVOICE_ADJUSTMENT">Create_Invoice_Adjustment</label><input type="checkbox" id="CREATE_INVOICE_ADJUSTMENT" name="action" value="Create_Invoice_Adjustment" /></div>
+<div><label for="UPDATE_INVOICE_ADJUSTMENT">Update_Invoice_Adjustment</label><input type="checkbox" id="UPDATE_INVOICE_ADJUSTMENT" name="action" value="Update_Invoice_Adjustment" /></div>
+<div><label for="DELETE_INVOICE_ADJUSTMENT">Delete_Invoice_Adjustment</label><input type="checkbox" id="DELETE_INVOICE_ADJUSTMENT" name="action" value="Delete_Invoice_Adjustment" /></div>
+<div><label for="RECEIVE_ORDER">Receive_Order</label><input type="checkbox" id="RECEIVE_ORDER" name="action" value="Receive_Order" /></div>
+<div><label for="MODIFY_BUDGET">Modify_Budget</label><input type="checkbox" id="MODIFY_BUDGET" name="action" value="Modify_Budget" /></div>
+<div><label for="MODIFY_FUND">Modify_Fund</label><input type="checkbox" id="MODIFY_FUND" name="action" value="Modify_Fund" /></div>
+<div><label for="CREATE_FUND">Create_Fund</label><input type="checkbox" id="CREATE_FUND" name="action" value="Create_Fund" /></div>
+<div><label for="DELETE_FUND">Delete_Fund</label><input type="checkbox" id="DELETE_FUND" name="action" value="Delete_Fund" /></div>
+<div><label for="ACQUISITION_CLAIM">Acquisition_Claim</label><input type="checkbox" id="ACQUISITION_CLAIM" name="action" value="Acquisition_Claim" /></div>
+<div><label for="ACQUISITION_ORDER">Acquisition_Order</label><input type="checkbox" id="ACQUISITION_ORDER" name="action" value="Acquisition_Order" /></div>
+<div><label for="OVERDUE">Overdue</label><input type="checkbox" id="OVERDUE" name="action" value="Overdue" /></div>
+<div><label for="EXPIRE">Expire</label><input type="checkbox" id="EXPIRE" name="action" value="Expire" /></div>
 <div><label for="EXPIRE"></label><input type="checkbox" id="EXPIRE" name="action" value="EXPIRE" /></div>
 </fieldset> </li>
         <li>
